@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width:50%;
+            margin: 40px;
+            
+
+            }
+        input{
+            padding: 2rem 4rem;
+            margin: 10px;
+            border-radius: 10px;
+            outline: none;
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title" id="test">IWUEKE CHINONSO JUDITH</h1>
+    
+    <form id="info">
+            <input type="text" value="Judith" placeholder="name">
+            <input type="email" value="@gmail.com" placeholder="Email">
+            <input type="password" value="1234" placeholder="Password">
+            <input type="number" value="08030738680" placeholder="Phone Number">
+        </form>
+        <script>
+            let myInfo = document.getElementById("info")
+            console.log("info")
+            let myTag = document.getElementsByTagName("input")
+            console.log(myTag)
+            for(let i = 0; i < myTag.length;i++){
+                let a = myTag[i];
+                console.log(a.value);
+
+                console.log(myTag[3].placeholder);
+            }
+        </script>
+    
+</body>
+</html>
